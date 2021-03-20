@@ -1,0 +1,9 @@
+Recursive formula :  T(n) = T(n/2) + 1
+Base case : T(1) = 1
+
+T(N) = T(N/2) + 1
+T(N) = T(N/2) + 1 = (T(N/4) + 1)+ 1
+...
+T(N) = T(N/N) + (1 + 1 + 1 +... + 1) = T(1) + log_2(N) = 1 + logN
+
+So the time complexity of binary search is O(logN)
